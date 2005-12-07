@@ -6,7 +6,7 @@ use warnings;
 use PostScript::Simple;
 use PostScript::Metrics;
 
-our $VERSION = '1.00';
+our $VERSION = '1.01';
 
 sub new
 {
