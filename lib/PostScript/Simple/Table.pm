@@ -6,7 +6,7 @@ use warnings;
 use PostScript::Simple;
 use PostScript::Metrics;
 
-our $VERSION = '1.01';
+our $VERSION = '1.02';
 
 sub new
 {
@@ -662,7 +662,9 @@ Returns an instance of the class. There are no parameters.
 
 =over
 
- If the -column_props parameter is used, it should be an arrayref of hashrefs, with one hashref for each column of the table. Each hashref can contain any of keys shown here:
+If the -column_props parameter is used, it should be an arrayref of hashrefs, 
+with one hashref for each column of the table. Each hashref can contain any 
+of keys shown here:
 
 =back
 
@@ -684,8 +686,13 @@ Returns an instance of the class. There are no parameters.
 
 =over
 	
- If the "width" parameter is used for -col_props, it should be specified for every column and the sum of these should be exacty equal to the -w parameter, otherwise Bad Things may happen. In cases of a conflict between column formatting and odd/even row formatting, the former will oeverride the latter.
-	
+If the "width" parameter is used for -col_props, it should be specified for 
+every column and the sum of these should be exacty equal to the -w parameter, 
+otherwise Bad Things may happen. In cases of a conflict between column 
+formatting and odd/even row formatting, the former will oeverride the latter.
+
+=back
+
 
 =head2 text_block($txtobj,$string,-x => $x, -y => $y, -w => $width, -h => $height)
 
@@ -729,11 +736,11 @@ Aaron Mitti, E<lt>mitti@cpan.orgE<gt>
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright (C) 2005 by Aaron Mitti
-Copyright (C) 2005 by Daemmon Hughes
-Copyright (C) 2005 by Rick Measham
-Copyright (C) 2004 by Stone Environmental Inc.
-All Rights Reserved.
+=item Copyright (C) 2005 by Aaron Mitti
+=item Copyright (C) 2005 by Daemmon Hughes
+=item Copyright (C) 2005 by Rick Measham
+=item Copyright (C) 2004 by Stone Environmental Inc.
+=item All Rights Reserved.
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself, either Perl version 5.8.4 or,

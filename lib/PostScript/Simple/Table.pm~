@@ -520,7 +520,7 @@ sub getColor {
     return undef;
   } 
    
-  if ($color_string =~ /^\#[0-9A-F]{6}/) {
+  if ($color_string =~ /^\#[0-9a-fA-F]{6}/) {
     # Given hex string, convert to base 10 array
     $color_string =~ /^\#(..)(..)(..)/;
     $color[0] = eval "0x$1";
